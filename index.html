@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+    <section id="setData" class="my-5">
+        <div class="container">
+            <h1 class="fs-3 fw-bolder opacity-50">Bookmarker</h1>
+            <hr>
+            <div class="setdata-content bg-light p-5 rounded-2">
+                <h2 class="text-center fw-bold fs-4">Bo<span class="text-info">okma</span>rk your favorite sites</h2>
+                <div class="line m-auto bg-info"></div>
+                    <label class="fw-bold" for="siteName">Site Name</label>
+                    <input type="text" id="siteName" class="form-control mb-3" placeholder="Bookmarker Name" required>
+
+                    <label class="fw-bold" for="siteUrl">Site URL</label>
+                    <input type="text" id="siteUrl" class="form-control mb-3" placeholder="Bookmarker URL" required>
+                    <div class="form-button text-center">
+                        <button id="btnAdd" class="btn btn-info w-100" onclick="addItem();">Add</button>
+                    </div>
+            </div>
+            <div class="showData" id="rowData">
+                
+            </div>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
